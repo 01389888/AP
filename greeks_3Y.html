@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>A Comparison of Formulations of the Volatility Surface</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async>
+            </script>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+                    <h1><a href="index.html" id="logo">A Comparison of Formulations of the Volatility Surface</a></h1>
+                    <h1><a href="index.html" id="logo">Online Interactive Appendix</a></h1>
+                    <h1><a href="index.html" id="logo"><em>Student Number: 01389888</em></a></h1>
+
+<!-- Nav -->
+<nav id="nav">
+    <ul>
+        <li ><a href="index.html">Home</a></li>
+        <li>
+            <a href="#">Implied Volatility</a>
+            <ul>
+                <li><a href="ImpVol_1Y.html">Tenor: 1Y</a></li>
+                <li><a href="ImpVol_2Y.html">Tenor: 2Y</a></li>
+                <li><a href="ImpVol_3Y.html">Tenor: 3Y</a></li>
+                <li><a href="ImpVol_4Y.html">Tenor: 4Y</a></li>
+                <li><a href="ImpVol_5Y.html">Tenor: 5Y</a></li>
+                <li><a href="ImpVol_10Y.html">Tenor: 10Y</a></li>
+                <li><a href="ImpVol_15Y.html">Tenor: 15Y</a></li>
+                <li><a href="ImpVol_20Y.html">Tenor: 20Y</a></li>
+                <li><a href="ImpVol_30Y.html">Tenor: 30Y</a></li>
+                <li><a href="#">Evolution</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">LMM</a>
+            <ul>
+                <li><a href="LMM_vol_1Y.html">Tenor: 1Y</a></li>
+                <li><a href="LMM_vol_2Y.html">Tenor: 2Y</a></li>
+                <li><a href="LMM_vol_3Y.html">Tenor: 3Y</a></li>
+                <li><a href="LMM_vol_4Y.html">Tenor: 4Y</a></li>
+                <li><a href="LMM_vol_5Y.html">Tenor: 5Y</a></li>
+                <li><a href="LMM_vol_10Y.html">Tenor: 10Y</a></li>
+                <li><a href="LMM_vol_15Y.html">Tenor: 15Y</a></li>
+                <li><a href="LMM_vol_20Y.html">Tenor: 20Y</a></li>
+                <li><a href="LMM_vol_30Y.html">Tenor: 30Y</a></li>
+                
+            </ul>
+        </li>
+        <li class="current">
+            <a href="#">SABR</a>
+            <ul>
+                <li>
+                    <a href="#">Sophisticated Calibration</a>
+                    <ul>
+                        <li><a href="SABR_1Y.html">Tenor: 1Y</a></li>
+                        <li><a href="SABR_2Y.html">Tenor: 2Y</a></li>
+                        <li><a href="SABR_3Y.html">Tenor: 3Y</a></li>
+                        <li><a href="SABR_4Y.html">Tenor: 4Y</a></li>
+                        <li><a href="SABR_5Y.html">Tenor: 5Y</a></li>
+                        <li><a href="SABR_10Y.html">Tenor: 10Y</a></li>
+                        <li><a href="SABR_15Y.html">Tenor: 15Y</a></li>
+                        <li><a href="SABR_20Y.html">Tenor: 20Y</a></li>
+                        <li><a href="SABR_30Y.html">Tenor: 30Y</a></li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Greeks</a>
+                    <ul>
+                        <li><a href="greeks_1Y.html">Tenor: 1Y</a></li>
+                        <li><a href="greeks_2Y.html">Tenor: 2Y</a></li>
+                        <li><a href="greeks_3Y.html">Tenor: 3Y</a></li>
+                        <li><a href="greeks_4Y.html">Tenor: 4Y</a></li>
+                        <li><a href="greeks_5Y.html">Tenor: 5Y</a></li>
+                        <li><a href="greeks_10Y.html">Tenor: 10Y</a></li>
+                        <li><a href="greeks_15Y.html">Tenor: 15Y</a></li>
+                        <li><a href="greeks_20Y.html">Tenor: 20Y</a></li>
+                        <li><a href="greeks_30Y.html">Tenor: 30Y</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Generic Calibration</a>
+                    <ul>
+                        <li><a href="SABR_norm_1Y.html">Tenor: 1Y</a></li>
+                        <li><a href="SABR_norm_2Y.html">Tenor: 2Y</a></li>
+                        <li><a href="SABR_norm_3Y.html">Tenor: 3Y</a></li>
+                        <li><a href="SABR_norm_4Y.html">Tenor: 4Y</a></li>
+                        <li><a href="SABR_norm_5Y.html">Tenor: 5Y</a></li>
+                        <li><a href="SABR_norm_10Y.html">Tenor: 10Y</a></li>
+                        <li><a href="SABR_norm_15Y.html">Tenor: 15Y</a></li>
+                        <li><a href="SABR_norm_20Y.html">Tenor: 20Y</a></li>
+                        <li><a href="SABR_norm_30Y.html">Tenor: 30Y</a></li>
+                        
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Non-Parametric Local Vol</a>
+            <ul>
+                <li><a href="Nonpara_vol_1Y.html">Tenor: 1Y</a></li>
+                <li><a href="Nonpara_vol_2Y.html">Tenor: 2Y</a></li>
+                <li><a href="Nonpara_vol_3Y.html">Tenor: 3Y</a></li>
+                <li><a href="Nonpara_vol_4Y.html">Tenor: 4Y</a></li>
+                <li><a href="Nonpara_vol_5Y.html">Tenor: 5Y</a></li>
+                <li><a href="Nonpara_vol_10Y.html">Tenor: 10Y</a></li>
+                <li><a href="Nonpara_vol_15Y.html">Tenor: 15Y</a></li>
+                <li><a href="Nonpara_vol_20Y.html">Tenor: 20Y</a></li>
+                <li><a href="Nonpara_vol_30Y.html">Tenor: 30Y</a></li>
+                
+            </ul>
+        </li>
+        <!--
+         <li><a href="left-sidebar.html">Left Sidebar</a></li>
+         <li><a href="right-sidebar.html">Right Sidebar</a></li>
+         <li><a href="two-sidebar.html">Two Sidebar</a></li>
+         <li><a href="no-sidebar.html">No Sidebar</a></li>
+         -->
+    </ul>
+</nav>
+
+                </div>
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div id="content">
+
+							<!-- Content -->
+
+								<article>
+                                    <header>
+                                        <h2>Greeks - 3 year tenor</h2>
+                                    </header>
+                                    <p>The surfaces of relevant greeks for the above swaption tenor can be found below. Note that in some cases there may be some interpolation error causing unreasonable values such as a delta greater than 1. The discretely calculated points do not suffer this error and interpolation has been carried out only to display a smooth surface.</p>
+                                    
+                                    <header><p>Delta</p></header>
+                                    <div id="myDivDelta" style="width:100%;height:100%"></div>
+                                    <header><p>Vega</p></header>
+                                    <div id="myDivVega" style="width:100%;height:100%"></div>
+                                    <header><p>Vanna</p></header>
+                                    <p>Note that these surface values for vanna are \( \times 10^{-8} \). </p>
+                                    <div id="myDivVanna" style="width:100%;height:100%"></div>
+                                    <header><p>Volga</p></header>
+                                    <p>Note that these surface values for volga are \( \times 10^{-7} \). </p>
+                                    <div id="myDivVolga" style="width:100%;height:100%"></div>
+                                </article>
+						</div>
+					</div>
+				</section>
+                
+            <!-- Buttons -->
+            
+                
+                
+                
+                
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+						</div>
+					</div>
+
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+            <script src="SABR/soph/js/Greeks/3Y/delta_3y.js"></script>
+            <script src="SABR/soph/js/Greeks/3Y/vega_3y.js"></script>
+            <script src="SABR/soph/js/Greeks/3Y/vanna_3y.js"></script>
+            <script src="SABR/soph/js/Greeks/3Y/volga_3y.js"></script>
+            
+
+	</body>
+</html>
